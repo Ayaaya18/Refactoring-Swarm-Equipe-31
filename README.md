@@ -125,18 +125,30 @@ Dimension	Poids
 Performance (tests + qualité)	40%
 Robustesse technique	30%
 Qualité des données	30%
-
 L’évaluation est réalisée automatiquement sur un jeu de données caché.
-⚠️ Intégrité académique
+
+⚠️ Intégrité académique:
 
 Ce projet est soumis à une politique stricte anti-plagiat :
 
 Analyse de similarité du code
-
 Analyse des prompts
-
 Vérification de l’historique Git
-
 Détection de signatures dans les logs
-
 Tout manquement entraîne une disqualification immédiate.
+
+✍️ Auteurs:
+
+Étudiant 1 – AOUICHAT Ayeterrahmane
+
+Étudiant 2 – HEMAIZIA Abderrahamne
+
+Étudiant 3 – DJAFAR Aya
+
+Étudiant 4 – BRAHIMI Aya
+
+👨‍🏫 Encadrement:
+
+Enseignant : BATATA Sofiane
+Module : IGL
+Niveau : 1CS – ESI
