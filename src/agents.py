@@ -85,7 +85,7 @@ class SwarmAgents:
         The Auditor Agent: Analyzes the code and produces a refactoring plan.
 
         """
-        time.sleep(2)
+        time.sleep(10)
         current_file = state["current_file_path"]
         if current_file is None:
             return state  # Aucun fichier restant
@@ -216,7 +216,7 @@ Provide a clear, step-by-step Refactoring Plan.
         The Fixer Agent: Applies the refactoring plan.
 
         """
-        time.sleep(2)
+        time.sleep(10)
         current_file = state["current_file_path"]
         if current_file is None:
             return state
@@ -496,7 +496,7 @@ Do not add module docstrings or new functions. Do not rename functions.
         print("⚖️ Judge running intelligent tests...")
 
 
-        time.sleep(2)
+        time.sleep(10)
         current_file = state["current_file_path"]
         if current_file is None:
             return state
