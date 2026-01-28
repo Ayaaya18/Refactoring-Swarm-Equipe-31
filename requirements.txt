@@ -1,0 +1,8 @@
+langgraph==0.0.40
+langchain==0.1.20
+langchain-core==0.1.53
+langchain-groq
+python-dotenv
+pytest
+pylint
+termcolor
