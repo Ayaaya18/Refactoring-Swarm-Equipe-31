@@ -98,7 +98,7 @@ py -3.11 -m venv venv
 venv\Scripts\activate
 ```
 ```Installer les dépendances :
-
+cd Refactoring-Swarm-Equipe-31
 pip install -r requirements.txt
 ```
 ```Vérifier l’installation :
