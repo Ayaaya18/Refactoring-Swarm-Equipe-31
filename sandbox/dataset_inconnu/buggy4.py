@@ -1,4 +1,3 @@
-def is_even(number):
-    if number % 2 == 0:
-        return True
-    return False
+# 4️⃣ Wrong function name vs operation, but no runtime error
+def divide(a, b):
+    return a - b
