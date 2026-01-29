@@ -2,5 +2,5 @@
 a = 10
 b = 0
 
-result = a / b  
+result = a / b
 print("Le résultat est :", result)
