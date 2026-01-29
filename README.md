@@ -94,8 +94,8 @@ communiquée à l’équipe.
 
 1. Créer un environnement virtuel :
 ```bash
-python -m venv venv
-source venv/bin/activate
+py -3.11 -m venv venv
+venv\Scripts\activate
 ```
 ```Installer les dépendances :
 
@@ -108,7 +108,7 @@ python check_setup.py
 ```
 ```Lancer le système :
 
-python main.py --target_dir sandbox/
+python main.py --target_dir "./sandbox/dataset_inconnu"
 ```
 📊 Logs & Données expérimentales
 
