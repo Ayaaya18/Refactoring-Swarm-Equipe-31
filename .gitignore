@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environnements virtuels
+venv/
+env/
+
+# Fichiers sensibles
+.env
+
+# OS
+.DS_Store
+
+# Dossier temporaire
+sandbox/
+
+# Logs
+logs/*
+!logs/experiment_data.json
