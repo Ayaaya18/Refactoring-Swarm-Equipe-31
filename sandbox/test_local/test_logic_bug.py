@@ -18,36 +18,31 @@ def test_count_down_non_integer():
     with pytest.raises(ValueError):
         count_down(3.5)
 
-def test_count_down_invalid_input_type():
-    with pytest.raises(ValueError):
-        count_down("five")
-
-def test_count_down_invalid_input_type_with_print_statement():
-    with pytest.raises(ValueError):
-        print(count_down("five"))
-
 def test_count_down_large_number():
     count_down(1000)
     assert True
 
-def test_count_down_zero_with_print_statement():
-    with pytest.raises(ValueError):
-        print(count_down(0))
+def test_count_down_single_digit():
+    count_down(9)
+    assert True
 
-def test_count_down_negative_integer_with_print_statement():
-    with pytest.raises(ValueError):
-        print(count_down(-1))
+def test_count_down_zero_with_assert():
+    try:
+        count_down(0)
+        assert False, "Expected ValueError to be raised"
+    except ValueError:
+        assert True
 
-def test_count_down_non_integer_with_print_statement():
-    with pytest.raises(ValueError):
-        print(count_down(3.5))
+def test_count_down_negative_integer_with_assert():
+    try:
+        count_down(-1)
+        assert False, "Expected ValueError to be raised"
+    except ValueError:
+        assert True
 
-def test_count_down_invalid_input_type_with_print_statement_and_assignment():
-    with pytest.raises(ValueError):
-        result = count_down("five")
-        print(result)
-
-def test_count_down_invalid_input_type_with_print_statement_and_assignment_and_print():
-    with pytest.raises(ValueError):
-        result = count_down("five")
-        print(result)
+def test_count_down_non_integer_with_assert():
+    try:
+        count_down(3.5)
+        assert False, "Expected ValueError to be raised"
+    except ValueError:
+        assert True

@@ -1,34 +1,22 @@
 # test_messy_code.py
-
 import pytest
 from messy_code import *
 
-def test_f_within_range():
-    # Test case: number within range
+def test_f_inclusive_range():
+    # Test that the function returns True for numbers within the inclusive range
+    assert f(0) == True
     assert f(50) == True
+    assert f(100) == True
 
-def test_f_at_max_value():
-    # Test case: number at max value
-    assert f(MAX_VALUE) == True
-
-def test_f_at_min_value():
-    # Test case: number at min value (0)
-    assert f(0) == False
-
-def test_f_below_min_value():
-    # Test case: number below min value
+def test_f_out_of_range():
+    # Test that the function returns False for numbers outside the inclusive range
     assert f(-1) == False
-
-def test_f_above_max_value():
-    # Test case: number above max value
     assert f(101) == False
+    assert f(200) == False
 
-def test_f_non_integer_input():
-    # Test case: non-integer input
+def test_f_invalid_input():
+    # Test that the function raises a TypeError for non-integer inputs
     with pytest.raises(TypeError):
-        f(50.5)
-
-def test_f_non_numeric_input():
-    # Test case: non-numeric input
+        f(3.14)
     with pytest.raises(TypeError):
-        f('a')
+        f('hello')

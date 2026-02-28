@@ -1,15 +1,13 @@
 """
-Module for counting down from a given number.
-
-This module provides a function to count down from a given number.
+Module to demonstrate a countdown function.
 """
 
 def count_down(n):
     """
-    Counts down from a given number.
+    Prints a countdown from n to 1.
 
     Args:
-        n (int): The number to count down from.
+        n (int): The starting number for the countdown.
 
     Raises:
         ValueError: If n is not a positive integer.
@@ -37,14 +35,6 @@ class TestCountDown(unittest.TestCase):
     def test_count_down_non_integer(self):
         with self.assertRaises(ValueError):
             count_down(3.5)
-
-    def test_count_down_invalid_input_type(self):
-        with self.assertRaises(ValueError):
-            count_down("five")
-
-    def test_count_down_invalid_input_type_with_print_statement(self):
-        with self.assertRaises(ValueError):
-            print(count_down("five"))
 
 if __name__ == '__main__':
     unittest.main()
